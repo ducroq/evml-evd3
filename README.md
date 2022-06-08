@@ -1,6 +1,6 @@
 # EVML-EVD3
 
-Embedded Vision and Machine Learning 3 
+This repository contains the teaching material for the EVD3 course of the minor Embedded Vision and Machine Learning.
 
 ## Getting started
 
