@@ -1,3 +1,4 @@
+.gitignore
 scripts/.idea/
 scripts/__pycache__/
 *.ppt*
