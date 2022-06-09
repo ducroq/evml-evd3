@@ -1,9 +1,0 @@
-.gitignore
-scripts/.idea/
-scripts/__pycache__/
-*.ppt*
-git_hints.txt
-todo/
-quizzes/
-results/
-general
