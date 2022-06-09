@@ -10,7 +10,7 @@ You can download and install the following software:
 * [Python](https://www.python.org/downloads/)
 
 ## Python packages
-Use pip as a tool for installing Python packages, such as OpenCV, Scikit-learn, Tensorflow, and Keras.
+Use pip as a tool for installing Python packages, such as OpenCV, Scikit-learn, Tensorflow, and Keras.<br />
 <code> pip install numpy scipy scikit-learn imutils opencv-python</code>
 
 ## Using GitLab
