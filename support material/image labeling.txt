@@ -1,0 +1,4 @@
+open source image labeling tools
+VGG Image Annotator, LabelImg, OpenLabeler, or ImgLab, or perhaps a commercial tool like
+LabelBox or Supervisely. You may also want to consider crowdsourcing platforms
+such as Amazon Mechanical Turk if you have a very large number of images to annotate.
