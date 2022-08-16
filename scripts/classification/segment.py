@@ -24,7 +24,7 @@ def maskBlueBG(img):
 
 if __name__ == "__main__":
     """ Test segmentation functions"""
-    data_path = 'G:\\My Drive\\data\\gesture_data\\hang_loose'
+    data_path = r'G:\My Drive\data\gesture_data\hang_loose'
     
     # grab the list of images in our data directory
     print("[INFO] loading images...")

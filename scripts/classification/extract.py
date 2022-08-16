@@ -95,7 +95,7 @@ def getBlobFeatures(img_BW):
 
 if __name__ == "__main__":
     """ Test feature extraction functions"""
-    filename = 'gesture_data\\hang_loose\\1598367493.png'
+    filename = r'G:\My Drive\data\gesture_data\hang_loose\1598367493.png'
         
     # load image and blur a bit to suppress noise
     img = cv.imread(filename)

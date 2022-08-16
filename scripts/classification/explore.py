@@ -8,7 +8,7 @@ import seaborn as sns
 
 if __name__ == "__main__":
     """feature exploration"""
-    data_path = 'gesture_data'
+    data_path = r'G:\My Drive\data\gesture_data'
 
     # fetch the data
     gestures = fetch_data(data_path)

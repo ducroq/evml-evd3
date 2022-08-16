@@ -82,7 +82,7 @@ def fetch_data(data_path):
 
 if __name__ == "__main__":
     """ Test fetching function"""
-    data_path = 'G:\\My Drive\\data\\gesture_data\\hang_loose'
+    data_path = r'G:\My Drive\data\gesture_data\hang_loose'
     
     gestures = fetch_data(data_path)
 

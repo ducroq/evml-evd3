@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn import datasets
-from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.preprocessing import PolynomialFeatures
@@ -26,43 +26,61 @@ def learning_curves(model, X, y):
     return train_errors, val_errors
 
 
-# Load the diabetes dataset
-diabetes = datasets.load_diabetes()
+# Load dataset
+iris = datasets.load_iris()
 
 # print some info
 # refer to https://docs.python.org/3/library/string.html#formatspec
 # to learn about the Format Specification Mini-Language
-print(diabetes.DESCR)
-print("Attributes:{}".format(dir(diabetes)))
-print("Features: {}".format(diabetes.feature_names))
-print("Nr of samples: {:d}".format(diabetes.target.size))
+print(iris.DESCR)
+print("Attributes:{}".format(dir(iris)))
+print("Features: {}".format(iris.feature_names))
+print("Nr of samples: {:d}".format(iris.target.size))
 
 
-# Use only BMI as a feature
-# note that variables have been normalized to have mean 0 and squared length = 1 
-X = diabetes.data[:,  2, np.newaxis] #0:5] #
-# note that a 2D array is expected by sklearn functions, hence a new axis
+# Select features
+feature_nr = 3
+X = iris.data[:, feature_nr, np.newaxis]
 
 # labels
-y = diabetes.target
+##y = iris.target
+y = (iris["target"] == 2).astype(int) # 1 if Iris virginica, else 0
 
+
+# Split the dataset in two  parts
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2)
+
+# Create regression object
 degree = 2
-reg = Pipeline([
-    ("poly_features", PolynomialFeatures(degree=degree, include_bias=False)),
-    ("lin_reg", LinearRegression()),
+reg = Pipeline([    
+    ("log_reg", LogisticRegression()),
 ])
 
-train_errors, val_errors = learning_curves(reg, X, y)
 
+reg.fit(X_train, y_train)
+
+# Make predictions using the testing set
+y_pred = reg.predict(X_test)
+
+# The mean squared error
+print('Mean squared error: %.2f'
+      % mean_squared_error(y_test, y_pred))
+# The coefficient of determination: 1 is perfect prediction
+print('Coefficient of determination: %.2f'
+      % r2_score(y_test, y_pred))
 
 # Plot outputs
 fig, ax = plt.subplots()
-ax.plot(np.sqrt(train_errors), "r-+", linewidth=2, label="train")
-ax.plot(np.sqrt(val_errors), "b-", linewidth=3, label="val")
-ax.set_title('Learning curves for degree {} polynomial regression'.format(degree))
-ax.set_xlabel('training set size')
-ax.set_ylabel('RMSE')
-ax.axis([0,len(train_errors),0,100])
-ax.legend(['train', 'val'])
+ax.scatter(X_test, y_test,  color='black')
+X_plot = np.linspace(0, 3, 1000).reshape(-1, 1)
+y_plot = reg.predict(X_plot)
+
+ax.plot(X_plot[:,0], y_plot, color='blue', linewidth=3)
+##ax.plot(X_test, y_pred, color='blue', linewidth=3)
+ax.set_xlabel(iris.feature_names[feature_nr])
+ax.set_ylabel('probability')
+ax.legend(['prediction']) 
+
 
 plt.show(block=True)
