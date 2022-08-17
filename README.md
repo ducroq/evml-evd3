@@ -10,8 +10,10 @@ You are invited to contribute to our collection of applications: https://padlet.
 
 ## Materials
 
-### Book
+### Books
 Géron, A. (2019). *Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems (2nd ed.)*. O’Reilly Media (ISBN: 9781492032649).
+
+Kaehler, A. and Bradski, G. (2016). *Learning OpenCV 3*. O'Reilly Media (ISBN: 9781491937990).
 
 
 ### Resources
@@ -54,7 +56,7 @@ You can download and install the following software:
 
 
 ### Python
-Python is used extensively in this course. As a prerequisite you can test your skills using an online test, see e.g. [Python quiz](https://www.w3schools.com/quiztest/quiztest.asp?qtest=PYTHON). In addition, you can find many online tutorials that can help you to master Python, see e.g. [Learn Python] (https://www.youtube.com/watch?v=rfscVS0vtbw).
+Python is used extensively in this course. As a prerequisite you can test your skills using an online test, see e.g. [Python quiz](https://www.w3schools.com/quiztest/quiztest.asp?qtest=PYTHON). In addition, you can find many online tutorials that can help you to master Python, see e.g. [Learn Python](https://www.youtube.com/watch?v=rfscVS0vtbw).
 
 
 ### Python packages
@@ -75,7 +77,7 @@ As a reminder, here is a list of git command line commands that are often used:
 
 
 ### Example scripts
-During the lessons, multiple example [scripts](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/scripts) will be discussed, you can find them in the respository.
+During the lessons, multiple example [scripts](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/scripts) will be discussed.
 
 
 ### Raspberry pi install
