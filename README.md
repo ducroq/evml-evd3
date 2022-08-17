@@ -6,6 +6,10 @@ We focus on application, training, finetuning and performance analysis.
 We take a hands-on approach here, and you will start working on a machine learning project right from the start of the semester.
 You are invited to contribute to our collection of applications: https://padlet.com/jeroen_veen/zul8z8tbvhqpvb8t
 
+## Book
+
+Géron, A. (2019). *Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems (2nd ed.)*. O’Reilly Media (ISBN: 9781492032649).
+
 ## Course assessment
 
 During the course you will work on 2 mini projects. Furthermore, there will be a theory quiz every other scheduled lesson.
