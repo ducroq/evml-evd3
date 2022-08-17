@@ -4,6 +4,7 @@ This repository contains the materials for the EVD3 course of the minor Embedded
 The course is concerned with machine learning and deep learning as applied in computer vision.
 We focus on application, training, finetuning and performance analysis.
 We take a hands-on approach here, and you will start working on a machine learning project right from the start of the semester.
+Please refer to the [schedule](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/schedule) to see the topis discussed, as well as the planning of the semester.
 You are invited to contribute to our collection of applications: https://padlet.com/jeroen_veen/zul8z8tbvhqpvb8t
 
 
@@ -14,14 +15,15 @@ Géron, A. (2019). *Hands-On Machine Learning with Scikit-Learn, Keras, and Tens
 
 
 ### Resources
-1. [sheets](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/sheets)
-2. [scripts](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/scripts)
-3. [support material](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/support%20material)
-4. [templates](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/templates) 
+1. [schedule](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/schedule)
+2. [sheets](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/sheets)
+3. [scripts](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/scripts)
+4. [support material](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/support%20material)
+5. [templates](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/templates) 
 
 
 ## Assessment
-During the course you will work on 2 mini projects. Furthermore, there will be a theory quiz every other scheduled lesson.
+During the course you will work on 2 mini projects. Furthermore, there will be theory quizzes as 
 You will receive two grades, which are composed as:
 
 1. Machine learning project report (80%) and quizzes (20%)
@@ -73,7 +75,7 @@ As a reminder, here is a list of git command line commands that are often used:
 
 
 ### Example scripts
-During the lessons, multiple example scripts will be discussed, you can find them in the respository, see [scripts](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/scripts).
+During the lessons, multiple example [scripts](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/scripts) will be discussed, you can find them in the respository.
 
 
 ### Raspberry pi install
