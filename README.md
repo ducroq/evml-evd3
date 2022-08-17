@@ -24,11 +24,17 @@ Kaehler, A. and Bradski, G. (2016). *Learning OpenCV 3*. O'Reilly Media (ISBN: 9
 5. [templates](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/templates) 
 
 
-## Assessment
+## Assessment (Voltijd)
 During the course you will work on 2 mini projects. Furthermore, there will be theory quizzes. You will receive two grades, which are composed as:
 
 1. Machine learning project report (80%) and quizzes (20%)
 2. Deep learning project report (80%) and quizzes (20%)
+
+
+## Assessment (Deeltijd)
+During the course you will work on a single mini project. Furthermore, there will be theory quizzes. Your grade will be composed as:
+
+Machine learning project report (80%) and quizzes (20%)
 
 
 ### Mini projects
