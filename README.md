@@ -7,25 +7,6 @@ We take a hands-on approach here, and you will start working on a machine learni
 Please refer to the [schedule](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/schedule) to see the topics discussed, as well as the planning of the semester.
 You are invited to contribute to our collection of applications: https://padlet.com/jeroen_veen/zul8z8tbvhqpvb8t
 
-<!-- 
-```plantuml
-@startuml
-participant User
-
-User -> A: DoWork
-activate A
-
-A -> B: << createRequest >>
-activate B
-
-B -> C: DoWork
-activate C
-
-A -> User: Done
-deactivate A
-@enduml
-``` 
--->
 
 ## Materials
 
