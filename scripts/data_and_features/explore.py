@@ -46,7 +46,7 @@ if __name__ == "__main__":
     # show scatter plot of features a and b
     a, b = 0, 1
     fig1 = plt.figure()
-    ax1 = sns.scatterplot(trainX[:,a], trainX[:,b], hue=le.inverse_transform(trainY))
+    ax1 = sns.scatterplot(x=trainX[:,a], y=trainX[:,b], hue=le.inverse_transform(trainY))
     ax1.set_title("Example of feature scatter plot")
     ax1.set_xlabel(gestures.feature_names[a])
     ax1.set_ylabel(gestures.feature_names[b])
