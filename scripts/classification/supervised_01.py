@@ -3,7 +3,7 @@ from sklearn import datasets
 from sklearn import svm
 from sklearn.model_selection import cross_val_score
 
-# load dataset, see https://scikit-learn.org/stable/datasets/index.html#datasets
+# load dataset, see https://scikit-learn.org and find the digit dataset
 digits = datasets.load_digits()
 # iris = datasets.load_iris()
 print(digits['DESCR'][:193] + '\n')
