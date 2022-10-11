@@ -19,7 +19,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 # instantiate a classifier estimator
 clf = Pipeline([
     ("scaler", StandardScaler()),
-    ("svm_clf", SVC(kernel="poly", degree=3, coef0=1, C=5))
+    ("svm_clf", SVC(kernel="poly", degree=1, coef0=100, C=0.5))
     ])
 
 # Propose cross-validation indices in the data set
@@ -53,7 +53,7 @@ ax.plot(train_sizes, test_scores_mean, 'o-', color="g",
              label="Cross-validation score")
 ax.set_title('Learning Curves for SVM, poly kernel, degree = 3')
 ax.set_xlabel('training set size')
-ax.set_ylabel('RMSE')
+ax.set_ylabel('Score')
 ax.legend(['train', 'val'],loc='lower right')
 
 plt.show(block=True)
