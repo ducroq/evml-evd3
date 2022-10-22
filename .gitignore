@@ -8,3 +8,4 @@ results/
 scripts/exercises
 schedule/*.xlsx
 general
+__pycache__
