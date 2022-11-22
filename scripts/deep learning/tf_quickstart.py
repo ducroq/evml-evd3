@@ -86,7 +86,7 @@ model.summary()
 # do not have a lot of training data.
 
 # Compile the model
-model.compile(optimizer='adam', # 'sgd'
+model.compile(optimizer='adam',
               loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=False),
               metrics=['accuracy'])
 

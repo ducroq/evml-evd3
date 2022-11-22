@@ -5,6 +5,9 @@ import matplotlib.pyplot as plt
 import os
 import time
 
+# Start tensorboard server from the terminal
+# % tensorboard --logdir "deep learning/my_logs"
+
 # Show some info
 print("Tensorflow version: {:s}".format(tf.__version__))
 print("Keras version: {:s}".format(keras.__version__))
