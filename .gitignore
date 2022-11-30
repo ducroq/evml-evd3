@@ -9,3 +9,6 @@ scripts/exercises
 schedule/*.xlsx
 general
 __pycache__
+scripts/deep learning/my_logs/
+scripts/deep learning/.idea/
+.idea/*
