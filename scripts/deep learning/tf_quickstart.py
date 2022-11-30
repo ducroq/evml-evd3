@@ -1,3 +1,5 @@
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # or any {'0', '1', '2'}
 import tensorflow as tf
 from tensorflow import keras
 import numpy as np
@@ -53,7 +55,7 @@ print("X_train_full shape: {} and type: {}".format(X_train.shape, X_train.dtype)
 X_train, X_test = X_train/255.0, X_test/255.0
 
 # Display the first 25 images from the training set and display the class name below each image
-plt.figure(figsize=(10,10))
+plt.figure(figsize=(10.0, 10.0))
 for i in range(25):
     plt.subplot(5,5,i+1)
     plt.xticks([])

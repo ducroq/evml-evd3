@@ -7,6 +7,9 @@ import time
 
 # Start tensorboard server from the terminal
 # % tensorboard --logdir "deep learning/my_logs"
+# import os
+# os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # or any {'0', '1', '2'}
+# import tensorflow as tf
 
 # Show some info
 print("Tensorflow version: {:s}".format(tf.__version__))

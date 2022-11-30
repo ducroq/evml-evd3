@@ -19,7 +19,12 @@ cv2.imshow("Example image", img)
 cv2.waitKey(0)
 
 # instantiate a classifier estimator
-clf = svm.SVC(gamma=0.001, C=100.)
+# clf = svm.SVC(gamma=0.001, C=100.)
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler
+
+clf = Pipeline([('scaler', StandardScaler()),
+                ('classifier', svm.SVC(gamma=0.001, C=100.))])
 
 # train the model on all images except the last 
 clf.fit(digits.data[:-1], digits.target[:-1])
