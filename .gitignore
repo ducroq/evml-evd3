@@ -12,3 +12,5 @@ __pycache__
 scripts/deep learning/my_logs/
 scripts/deep learning/.idea/
 .idea/*
+my_logs/
+tuner/
