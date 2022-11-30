@@ -17,7 +17,7 @@ print("Keras version: {:s}".format(keras.__version__))
 physical_devices = tf.config.list_physical_devices()
 print(physical_devices)
 
-root_logdir = os.path.join(os.curdir, "my_logs")
+root_logdir = os.path.join(os.getcwd(), "my_logs")
 run_id = time.strftime("run_%Y_%m_%d-%H_%M_%S")
 run_logdir = os.path.join(root_logdir, run_id)
 print("Tensor board logging folder: {}".format(run_logdir))
