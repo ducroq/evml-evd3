@@ -9,7 +9,7 @@ from sklearn.metrics import confusion_matrix, classification_report
 from numpy import round
 from seaborn import heatmap
 
-data_path = 'gesture_data'
+data_path = r'C:\Users\scbry\OneDrive - HAN\data\EVML\gesture_data'
 project_name = 'gesture_transfer_learning'
 do_data_augmentation = True
 image_shape = (224, 224, 3)
@@ -27,7 +27,7 @@ for p in physical_devices:
     print("\t{}".format(p.device_type))
 
 # Hook up Tensorboard
-root_logdir = os.path.join(os.curdir, project_name + '_logs')
+root_logdir = os.path.join(os.getcwd(), "my_logs", project_name + '_logs')
 run_id = time.strftime("run_%Y_%m_%d-%H_%M_%S")
 run_logdir = os.path.join(root_logdir, run_id)
 tensorboard_cb = keras.callbacks.TensorBoard(run_logdir)
