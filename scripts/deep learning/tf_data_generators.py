@@ -24,7 +24,7 @@ print("\n")
 
 # Using image data generator and directory iterator
 # See: https://www.tensorflow.org/api_docs/python/tf/keras/preprocessing/image
-# Note that tf.keras.preprocessing.image is depricated
+# Note that tf.keras.preprocessing.image seems depricated
 data_gen = keras.preprocessing.image.ImageDataGenerator(rescale=1./255, \
         preprocessing_function=None, validation_split=0.2) #, rotation_range=20)
 
