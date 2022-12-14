@@ -23,7 +23,7 @@ clf = Pipeline([
     ])
 
 # Propose cross-validation indices in the data set
-cv = ShuffleSplit(n_splits=100, test_size=0.2)#, random_state=0)
+cv = ShuffleSplit(n_splits=100, test_size=0.2) #, random_state=0)
 
 # Compute learning curves
 train_sizes=np.linspace(.1, 1.0, 10)

@@ -4,7 +4,7 @@ from sklearn.svm import SVC
 from sklearn.pipeline import Pipeline
 from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import plot_confusion_matrix, classification_report
+from sklearn.metrics import classification_report, ConfusionMatrixDisplay
 
 # load a dataset, see https://scikit-learn.org/stable/datasets/index.html#datasets
 digits = datasets.load_digits()
@@ -21,10 +21,11 @@ clf = Pipeline([
 
 # fit the classifier
 clf.fit(X_train, y_train)
+y_pred = clf.predict(X_test)
 
 # Plot confusion matrix
 fig0, ax0 = plt.subplots(1,1)
-plot_confusion_matrix(clf, X_test, y_test, ax=ax0)
+ConfusionMatrixDisplay.from_predictions(y_pred, y_test, ax=ax0)
 ax0.set_title('Confusion matrix')
 plt.tight_layout()
 
