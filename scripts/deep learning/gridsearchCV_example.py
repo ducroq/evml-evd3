@@ -31,7 +31,7 @@ def model_builder(dense_layer_units, learning_rate):
   model = keras.Sequential()
   model.add(keras.layers.Flatten(input_shape=(28, 28)))
   model.add(keras.layers.Dense(units = dense_layer_units, activation = 'relu'))
-  model.add(keras.layers.Dense(10))
+  model.add(keras.layers.Dense(len(class_names)))
   model.compile(optimizer = keras.optimizers.Adam(learning_rate = learning_rate),
                 loss = keras.losses.SparseCategoricalCrossentropy(from_logits = True), 
                 metrics = ['accuracy'])
