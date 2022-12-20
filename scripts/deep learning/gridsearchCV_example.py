@@ -56,5 +56,5 @@ print("GridSearchCV results:")
 print(f'Optimal estimator: {gs_res.best_estimator_}')
 print(f'Optimal parameters: {gs_res.best_params_}')
 print(f'Optimal score: {gs_res.best_score_}')
-print(f"Revalidation score of best estimator: {mean(score)}")
+print(f"Re-validation score of best estimator: {mean(score)}")
 

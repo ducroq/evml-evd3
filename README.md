@@ -58,14 +58,14 @@ You can download and install the following software:
 
 * [A Git client](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html)
 * [Python](https://www.python.org/downloads/)
-
+* An IDE, such as [Visual Studio Code](https://code.visualstudio.com/) or [Pycharm](https://www.jetbrains.com/pycharm/)
 
 ### Python
 Python is used extensively in this course. As a prerequisite you can test your skills using an online test, see e.g. [Python quiz](https://www.w3schools.com/quiztest/quiztest.asp?qtest=PYTHON). In addition, you can find many online tutorials that can help you to master Python, see e.g. [Learn Python](https://www.youtube.com/watch?v=rfscVS0vtbw).
 
 
 ### Python packages
-Use pip as a tool for installing Python packages, such as OpenCV, Scikit-learn, Tensorflow, and Keras.<br />
+Either use the package manager of your IDE or use pip as a tool for installing Python packages, such as OpenCV, Scikit-learn, Tensorflow, and Keras.<br />
 <code> pip install numpy scipy scikit-learn imutils opencv-python</code>
 
 
