@@ -44,11 +44,12 @@ for i in range(n_filters):
 
 # Example of visualizing feature maps
 # redefine model to output right after the first hidden layer
+import os
 ixs = [2, 5, 9, 13, 17]
 outputs = [model.layers[i].output for i in ixs]
 model = keras.models.Model(inputs=model.inputs, outputs=outputs)
 # load the image with the required shape
-img = keras.preprocessing.image.load_img('mus.jpg', target_size=(224, 224))
+img = keras.preprocessing.image.load_img(r'scripts\deep learning\mus.jpg', target_size=(224, 224))
 # convert the image to an array
 img = keras.preprocessing.image.img_to_array(img)
 # expand dimensions so that it represents a single 'sample'
