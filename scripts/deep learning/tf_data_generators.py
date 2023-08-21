@@ -22,6 +22,7 @@ label_names = [os.path.split(f)[-1] for f in glob.iglob(os.path.sep.join([data_p
 print("[INFO] {} labels found: {}".format(len(label_names), label_names))
 print("\n")
 
+# Example 1
 # Using image data generator and directory iterator
 # See: https://www.tensorflow.org/api_docs/python/tf/keras/preprocessing/image
 # Note that tf.keras.preprocessing.image seems depricated
@@ -42,6 +43,7 @@ val_ds = keras.preprocessing.image.DirectoryIterator(data_path, data_gen, \
 
 print("\n\n\n")
 
+# Example 2
 # Using image data generator and flow_from_directory
 datagen = keras.preprocessing.image.ImageDataGenerator(rescale=1./255, validation_split=.2)
 dataflow_kwargs = dict(target_size=image_shape, batch_size=batch_size,
@@ -57,6 +59,7 @@ valid_generator = datagen.flow_from_directory(
 
 print("\n\n\n")
 
+# Example 3
 # Using image_dataset_from_directory is the preferred method, since tf.keras.preprocessing.image is depricated
 train_ds = keras.preprocessing.image_dataset_from_directory(data_path,
         validation_split=0.2, subset="training", seed=123, image_size=image_shape[0:2], batch_size=batch_size)

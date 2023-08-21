@@ -15,3 +15,5 @@ scripts/deep learning/.idea/
 my_logs/
 tuner/
 scripts/my_solution
+models/
+netwerk/

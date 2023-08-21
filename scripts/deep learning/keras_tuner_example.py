@@ -30,7 +30,6 @@ print("img_train shape: {} and type: {}".format(img_train.shape, img_train.dtype
 # Normalize pixel values between 0 and 1
 img_train, img_test = img_train/255.0, img_test/255.0
 
-
 # Define model
 # The model you set up for hypertuning is called a hypermodel. 
 # You can define a hypermodel through two approaches: 
