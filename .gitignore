@@ -8,6 +8,7 @@ results/
 scripts/exercises
 schedule/*.xlsx
 general
+logs
 __pycache__
 scripts/deep learning/my_logs/
 scripts/deep learning/.idea/
@@ -17,3 +18,4 @@ tuner/
 scripts/my_solution
 models/
 netwerk/
+templates/*.pdf

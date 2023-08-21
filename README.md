@@ -25,12 +25,12 @@ Kaehler, A. and Bradski, G. (2016). *Learning OpenCV 3*. O'Reilly Media (ISBN: 9
 
 
 ## Assessment
-During the course you will work on 2 mini projects. Furthermore, there will be theory quizzes. You will receive two grades, which are composed as:
+<!-- During the course you will work on 2 mini projects. Furthermore, there will be theory quizzes. You will receive two grades, which are composed as:
 
 1. Machine learning project report (80%) and quizzes (20%)
-2. Deep learning project report (80%) and quizzes (20%)
+2. Deep learning project report (80%) and quizzes (20%) -->
 
-Parttime students (Deeltijd) will only work on the ML mini project, and their grade will accordingly be composed as: 
+During the course, parttime students (Deeltijd) will work on a ML mini project, and their grade will accordingly be composed as: 
 - Machine learning project report (80%) and quizzes (20%)
 
 
@@ -58,7 +58,7 @@ You can download and install the following software:
 
 * [A Git client](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html)
 * [Python](https://www.python.org/downloads/)
-* An IDE, such as [Visual Studio Code](https://code.visualstudio.com/) or [Pycharm](https://www.jetbrains.com/pycharm/)
+* An IDE, such as [Visual Studio Code](https://code.visualstudio.com/), [Pycharm](https://www.jetbrains.com/pycharm/). [Data Spell](https://www.jetbrains.com/dataspell/).
 
 ### Python
 Python is used extensively in this course. As a prerequisite you can test your skills using an online test, see e.g. [Python quiz](https://www.w3schools.com/quiztest/quiztest.asp?qtest=PYTHON). In addition, you can find many online tutorials that can help you to master Python, see e.g. [Learn Python](https://www.youtube.com/watch?v=rfscVS0vtbw).
