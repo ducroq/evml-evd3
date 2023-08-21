@@ -8,7 +8,7 @@ results/
 scripts/exercises
 schedule/*.xlsx
 general
-logs
+logs/
 __pycache__
 scripts/deep learning/my_logs/
 scripts/deep learning/.idea/
