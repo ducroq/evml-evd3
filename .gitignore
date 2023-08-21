@@ -19,3 +19,4 @@ scripts/my_solution
 models/
 netwerk/
 templates/*.pdf
+templates/*DL*
