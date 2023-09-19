@@ -17,7 +17,7 @@ kMappings = {}
 for key in mappings.keys():
     kMappings[ord(key)] = mappings[key]
 
-vs = VideoStream(usePiCamera=False, resolution=frame_size).start()
+vs = VideoStream(src=1, usePiCamera=False, resolution=frame_size).start()
 time.sleep(1.0)
 
 print(mappings)
@@ -30,7 +30,7 @@ while True:
     if frame is None:
         continue
 
-    frame = np.rot90(frame,3)
+    # frame = np.rot90(frame,3)
 
     cv.imshow("Frame", frame)
 
