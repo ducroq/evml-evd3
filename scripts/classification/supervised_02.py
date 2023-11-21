@@ -1,5 +1,6 @@
 import cv2 as cv
 from sklearn import datasets
+from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
 from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import train_test_split
@@ -14,13 +15,15 @@ X_train, X_test, y_train, y_test = train_test_split(
     digits.data, digits.target, test_size=0.5, random_state=0)
 
 # Set the parameters by cross-validation
-tuned_parameters = [{'kernel': ['rbf'], 'gamma': [1e-3, 1e-4],
-                     'C': [1, 10, 100, 1000]},
-                    {'kernel': ['linear'], 'C': [1, 10, 100, 1000]}]
+# tuned_parameters = [{'kernel': ['rbf'], 'gamma': [1e-3, 1e-4],
+#                      'C': [1, 10, 100, 1000]},
+#                     {'kernel': ['linear'], 'C': [1, 10, 100, 1000]}]
+
+tuned_parameters = [{'n_neighbors': [3,5,7,9], 'weights': ['uniform', 'distance']}]
 
 # Tuning hyper-parameters for accuracy
 clf = GridSearchCV(
-    SVC(), tuned_parameters, scoring='accuracy'
+    KNeighborsClassifier(), tuned_parameters, scoring='accuracy'
 )
 clf.fit(X_train, y_train)
 
