@@ -9,7 +9,7 @@ The course teaches machine learning and deep learning for computer vision. It fo
 - How to analyze performance
 
 The course uses a hands-on approach. You start a machine learning project at the beginning of the semester.
-To see the course topics and planning, refer to the [schedule](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/schedule).
+To see the course topics and planning, refer to the [schedule](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/schedule/schedule.md).
 You can add to our collection of applications. To do this, go to: https://padlet.com/jeroen_veen/zul8z8tbvhqpvb8t"
 
 ## Materials
@@ -23,7 +23,7 @@ Kaehler, A. and Bradski, G. (2016). *Learning OpenCV 3*. O'Reilly Media (ISBN: 9
 
 
 ### Resources
-1. [schedule](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/schedule)
+1. [schedule](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/schedule/schedule.md)
 2. [sheets](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/sheets)
 3. [scripts](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/scripts)
 4. [support material](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/support%20material)
@@ -40,7 +40,7 @@ During the course you will work on 2 mini projects. Furthermore, there will be t
 ### Mini projects
 * A project team consists of 2-3 students
 * Report building using templates (see [templates](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/templates))
-* Deliver (intermediate) results via HandIn as indicated in the [schedule](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/schedule)
+* Deliver (intermediate) results via HandIn as indicated in the [schedule](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/schedule/schedule.md)
 
 
 ### Quizzes
@@ -53,7 +53,7 @@ During the course you will work on 2 mini projects. Furthermore, there will be t
 * During the quiz: no entering or leaving the classroom, and silence
 
 ## Schedule
-The planning of the semester can be found in the [schedule](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/schedule). Here you can find the delivery deadlines and quiz occurences.
+The planning of the semester can be found in the [schedule](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/schedule/schedule.md). Here you can find the delivery deadlines and quiz occurences.
 
 
 ## Software development
