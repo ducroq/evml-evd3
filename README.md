@@ -64,7 +64,7 @@ You can download and install the following software:
 * An IDE, such as [Visual Studio Code](https://code.visualstudio.com/), [Pycharm](https://www.jetbrains.com/pycharm/). [Data Spell](https://www.jetbrains.com/dataspell/).
 
 ### Python
-Python is used extensively in this course. As a prerequisite you can test your skills using an online test, see e.g. [Python quiz](https://www.w3schools.com/quiztest/quiztest.asp?qtest=PYTHON). In addition, you can find many online tutorials that can help you to master Python, see e.g. [Python roadmap](https://roadmap.sh/python), [Learn Python](https://www.youtube.com/watch?v=rfscVS0vtbw), [Free Python books](https://github.com/EbookFoundation/free-programming-books/blob/main/books/free-programming-books-langs.md#python), 
+Python is used extensively in this course. As a prerequisite you can test your skills using an online test, see e.g. [Python quiz](https://www.w3schools.com/quiztest/quiztest.asp?qtest=PYTHON). In addition, you can find many online tutorials that can help you to master Python, see e.g. [Python roadmap](https://roadmap.sh/python), [Learn Python](https://www.youtube.com/watch?v=rfscVS0vtbw), [Free Python books](https://github.com/EbookFoundation/free-programming-books/blob/main/books/free-programming-books-langs.md#python).
 
 
 ### Python packages
