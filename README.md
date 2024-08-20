@@ -1,12 +1,16 @@
 # EVML-EVD3
 
-This repository contains the materials for the EVD3 course of the minor Embedded Vision and Machine Learning.
-The course is concerned with machine learning and deep learning as applied in computer vision.
-We focus on application, training, finetuning and performance analysis.
-We take a hands-on approach here, and you will start working on a machine learning project right from the start of the semester.
-Please refer to the [schedule](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/schedule) to see the topics discussed, as well as the planning of the semester.
-You are invited to contribute to our collection of applications: https://padlet.com/jeroen_veen/zul8z8tbvhqpvb8t
+This repository has the materials for the EVD3 course. The course is part of the minor Embedded Vision and Machine Learning.
+The course teaches machine learning and deep learning for computer vision. It focuses on:
 
+- How to apply these methods
+- How to train models
+- How to fine-tune models
+- How to analyze performance
+
+The course uses a hands-on approach. You start a machine learning project at the beginning of the semester.
+To see the course topics and planning, refer to the [schedule](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/schedule).
+You can add to our collection of applications. To do this, go to: https://padlet.com/jeroen_veen/zul8z8tbvhqpvb8t"
 
 ## Materials
 
@@ -27,13 +31,10 @@ Kaehler, A. and Bradski, G. (2016). *Learning OpenCV 3*. O'Reilly Media (ISBN: 9
 
 
 ## Assessment
-<!-- During the course you will work on 2 mini projects. Furthermore, there will be theory quizzes. You will receive two grades, which are composed as:
+During the course you will work on 2 mini projects. Furthermore, there will be theory quizzes. You will receive two grades, which are composed as:
 
 1. Machine learning project report (80%) and quizzes (20%)
-2. Deep learning project report (80%) and quizzes (20%) -->
-
-During the course, parttime students (Deeltijd) will work on a ML mini project, and their grade will accordingly be composed as: 
-- Machine learning project report (80%) and quizzes (20%)
+2. Deep learning project report (80%) and quizzes (20%)
 
 
 ### Mini projects
@@ -63,7 +64,7 @@ You can download and install the following software:
 * An IDE, such as [Visual Studio Code](https://code.visualstudio.com/), [Pycharm](https://www.jetbrains.com/pycharm/). [Data Spell](https://www.jetbrains.com/dataspell/).
 
 ### Python
-Python is used extensively in this course. As a prerequisite you can test your skills using an online test, see e.g. [Python quiz](https://www.w3schools.com/quiztest/quiztest.asp?qtest=PYTHON). In addition, you can find many online tutorials that can help you to master Python, see e.g. [Learn Python](https://www.youtube.com/watch?v=rfscVS0vtbw).
+Python is used extensively in this course. As a prerequisite you can test your skills using an online test, see e.g. [Python quiz](https://www.w3schools.com/quiztest/quiztest.asp?qtest=PYTHON). In addition, you can find many online tutorials that can help you to master Python, see e.g. [Python roadmap](https://roadmap.sh/python), [Learn Python](https://www.youtube.com/watch?v=rfscVS0vtbw), [Free Python books](https://github.com/EbookFoundation/free-programming-books/blob/main/books/free-programming-books-langs.md#python), 
 
 
 ### Python packages

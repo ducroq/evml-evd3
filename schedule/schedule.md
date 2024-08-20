@@ -1,0 +1,4 @@
+| Wk | wknr | date | Title | Topics | Quiz | Hand in deliverable | ~~Géron (Ed2)~~ | ~~Bradski~~ |
+|----|------|------|-------|--------|------|---------------------|------------------|-------------|
+| 1.1/A | 36 | 2/9/2024 | Basic principles & set-up | Introduction <br> Organization <br> Why machine learning?, Machine learning approaches, Python, Numpy primer OpenCV tutorial | | | ~~1-22~~ | ~~769-779~~ |
+| 1.2/B | 37 | 9/9/2024 | Basic principles & set-up | Assignment introduction ML portfolio template How to start? Conditioned acquisition Data collection example script and sci-kitlearn Feature engineering Splitting, exploring data | | | ~~23-34 35-83 493-498 511-512 526-545~~ | ~~770-771~~ |

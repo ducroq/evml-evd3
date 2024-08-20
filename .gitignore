@@ -1,6 +1,7 @@
 scripts/.idea/
 scripts/__pycache__/
 *.ppt*
+*.zip
 git_hints.txt
 todo/
 quizzes/
