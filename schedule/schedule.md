@@ -1,5 +1,5 @@
-| Wk | Wknr | date | Title | Topics | Quiz | Hand in deliverable | Géron (Ed2) | Bradski |
-|----|------|------|-------|--------|------|---------------------|------------------|-------------|
+| Wk | nr | date | Title | Topics | Quiz | Hand in deliverable | Géron (Ed2) | Bradski |
+|----|------|------|-------|--------|------|------------------|------------------|------------------|
 | 1.1/A | 36 | 2/9/2024 | Basic principles & set-up | Introduction <br> Organization <br> Why machine learning? <br> Machine learning approaches <br> Python, Numpy primer <br> OpenCV tutorial | | | 1-22 | 769-779 |
 | 1.2/B | 37 | 9/9/2024 | Basic principles & set-up | Assignment introduction <br> ML portfolio template <br> How to start? Conditioned acquisition <br> Data collection example script and sci-kitlearn <br> Feature engineering <br> Splitting, exploring data | | | 23-34 35-83 493-498 511-512 526-545 | 770-771 |
 | 1.3/C | 38 | 16/9/2024 | Preparing the data | Basic segmentation and feature extraction <br> Splitting your data <br> Exploratory data analysis <br> Feature engineering <br> Data preparation | 1 <br>  ML principles | | 85-109 <br> 153-162 <br> 175-178 <br> 189-208 | 799-848 <br> 859-864 <br> 875-906 |
