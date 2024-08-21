@@ -2,39 +2,47 @@ import matplotlib.pyplot as plt
 from sklearn import datasets
 from sklearn.svm import SVC
 from sklearn.pipeline import Pipeline
-from sklearn.model_selection import train_test_split, cross_val_score
+from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import classification_report, ConfusionMatrixDisplay
 
-# load a dataset, see https://scikit-learn.org/stable/datasets/index.html#datasets
+# Load the digits dataset
 digits = datasets.load_digits()
 
-# Sample a training set while holding out 40% of the data for testing (evaluating) our classifier
+# Split the data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(
-    digits.data, digits.target, test_size=0.4, random_state=0)
+    digits.data, digits.target, test_size=0.1, random_state=42
+)
 
-# instantiate a classifier estimator
+# Create a pipeline with StandardScaler and SVM classifier
 clf = Pipeline([
     ("scaler", StandardScaler()),
-    ("svm_clf", SVC(kernel="poly", degree=3, coef0=1, C=5))
-    ])
+    ("svm_clf", SVC(kernel="linear", C=5, random_state=42))
+])
 
-# fit the classifier
+# Train the classifier
 clf.fit(X_train, y_train)
+
+# Make predictions on the test set
 y_pred = clf.predict(X_test)
 
 # Plot confusion matrix
-fig0, ax0 = plt.subplots(1,1)
-ConfusionMatrixDisplay.from_predictions(y_pred, y_test, ax=ax0)
-ax0.set_title('Confusion matrix')
+fig, ax = plt.subplots(figsize=(10, 8))
+ConfusionMatrixDisplay.from_predictions(y_test, y_pred, ax=ax, cmap='Blues')
+ax.set_title('Confusion Matrix for Digits Classification')
 plt.tight_layout()
 
-# Show detailed classification report
-y_true, y_pred = y_test, clf.predict(X_test)
-print("Detailed classification report:")
-print()
-print(classification_report(y_true, y_pred))
-print()
+# Print detailed classification report
+print("Classification Report:")
+print(classification_report(y_test, y_pred))
 
+# Show the plot
+plt.show()
 
-plt.show(block=True)
+# Optionally, save the confusion matrix plot
+# import os
+
+# script_name = os.path.splitext(os.path.basename(__file__))[0]
+# confusion_matrix_filename = f"{script_name}_confusion_matrix.png"
+# plt.savefig(confusion_matrix_filename)
+# print(f"Confusion matrix saved as: {confusion_matrix_filename}")
