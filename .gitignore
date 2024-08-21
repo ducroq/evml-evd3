@@ -21,3 +21,4 @@ models/
 netwerk/
 templates/*.pdf
 templates/*DL*
+venv/
