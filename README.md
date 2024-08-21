@@ -1,6 +1,6 @@
 # EVML-EVD3
 
-This repository has the materials for the EVD3 course. The course is part of the minor Embedded Vision and Machine Learning.
+This repository has the materials for the EVML-EVD3 course. The course is part of the minor Embedded Vision and Machine Learning.
 The course teaches machine learning and deep learning for computer vision. It focuses on:
 
 - How to apply these methods
@@ -12,12 +12,33 @@ The course uses a hands-on approach. You start a machine learning project at the
 To see the course topics and planning, refer to the [schedule](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/schedule.md).
 You can add to our collection of applications. To do this, go to: https://padlet.com/jeroen_veen/zul8z8tbvhqpvb8t"
 
+## Summary
+
+EVML-EVD3 is a workshop that teaches machine learning and deep learning for (embedded) computer vision. These methods perform tasks without explicit instructions, helping systems adapt to changing conditions. They use data to estimate mathematical functions that model part of reality.
+
+Many different machine learning algorithms exist, each with its own strengths. No single algorithm works best for all problems. Deep learning, a type of machine learning, tries to copy how the human brain works. It uses artificial neurons in multiple layers.
+
+In this workshop, you will learn various machine learning approaches. You will study how to use neural networks, how to train and improve them, and how to analyze their performance. The course also covers data preparation and performance assessment.
+
+The main goal is to teach you how to design, build, and test machine learning systems for image processing, with a focus on object classification. The course takes a hands-on approach. You will start a project at the beginning of the semester using Python packages like OpenCV, Scikit-learn, Tensorflow, and Keras.
+
+For assessment, you will write a report about your project. In this report, you will explain your choices and evaluate your model's performance. This workshop provides practical skills for applying machine learning to real-world computer vision tasks."
+
+## Learning objectives
+
+You are expected to:
+1. explain ML basic principles and reflect on its applications.
+2. apply supervised ML in practice by selecting and training an algorithm, and preparing data.
+3. analyze an supervised ML pipeline by validating and testing; and evaluating quality measures.
+4. understand DL basic principles and reflect on its application.
+5. apply a CNN in practice by selecting and training a network.
+6. analyze a CNN and evaluates its performance.
+
+
 ## Materials
 
 ### Books
 Géron, A. (2019). *Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems (2nd ed.)*. O’Reilly Media (ISBN: 978-1492032649).
-
-or 
 
 Géron, A. (2022). *Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow (3rd ed.)*. O’Reilly Media (ISBN: 978-1098125974).
 
@@ -29,7 +50,8 @@ Kaehler, A. and Bradski, G. (2016). *Learning OpenCV 3*. O'Reilly Media (ISBN: 9
 2. [sheets](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/sheets)
 3. [scripts](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/scripts)
 4. [support material](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/support%20material)
-5. [templates](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/templates) 
+5. [templates](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/templates)
+6. [collection of applications] (https://padlet.com/jeroen_veen/zul8z8tbvhqpvb8t)
 
 
 ## Assessment
@@ -42,12 +64,12 @@ During the course you will work on 2 mini projects. Furthermore, there will be t
 ### Mini projects
 * A project team consists of 2-3 students
 * Report building using templates (see [templates](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/templates))
-* Deliver (intermediate) results via HandIn as indicated in the [schedule](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/schedule.md)
+* Deliver final results via HandIn as indicated in the [schedule](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/schedule.md)
 
 
 ### Quizzes
 * Individual, multiple choice questions
-* Online http://www.socrative.com room 1PTGB6PY
+* Online [socrative](http://www.socrative.com) room 1PTGB6PY
 * Open book quiz, so books and slides can be consulted
 * HAN student number, so NOT your name, nickname or anything else
 * Quiz starts exactly at class hour and takes 10 minutes
