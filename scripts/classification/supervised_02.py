@@ -1,39 +1,67 @@
-import cv2 as cv
+import numpy as np
 from sklearn import datasets
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.svm import SVC
-from sklearn.model_selection import cross_val_score
-from sklearn.model_selection import train_test_split
-from sklearn.model_selection import GridSearchCV
+# from sklearn.svm import SVC  # Uncomment if using SVM
+from sklearn.model_selection import train_test_split, GridSearchCV
+import matplotlib.pyplot as plt
 
-
-# load dataset, see https://scikit-learn.org/stable/datasets/index.html#datasets
+# Load the digits dataset
 digits = datasets.load_digits()
+X, y = digits.data, digits.target
 
-# Split the dataset in two equal parts
-X_train, X_test, y_train, y_test = train_test_split(
-    digits.data, digits.target, test_size=0.5, random_state=0)
+# Split the dataset into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
-# Set the parameters by cross-validation
-# tuned_parameters = [{'kernel': ['rbf'], 'gamma': [1e-3, 1e-4],
-#                      'C': [1, 10, 100, 1000]},
-#                     {'kernel': ['linear'], 'C': [1, 10, 100, 1000]}]
+# Define the parameter grid for KNN
+param_grid = {
+    'n_neighbors': [3, 5, 7, 9],
+    'weights': ['uniform', 'distance']
+}
 
-tuned_parameters = [{'n_neighbors': [3,5,7,9], 'weights': ['uniform', 'distance']}]
+# Alternative parameter grid for SVM (commented out)
+# param_grid = [{'kernel': ['rbf'], 'gamma': [1e-3, 1e-4],
+#                'C': [1, 10, 100, 1000]},
+#               {'kernel': ['linear'], 'C': [1, 10, 100, 1000]}]
 
-# Tuning hyper-parameters for accuracy
-clf = GridSearchCV(
-    KNeighborsClassifier(), tuned_parameters, scoring='accuracy'
-)
-clf.fit(X_train, y_train)
+# Create and run the GridSearchCV
+grid_search = GridSearchCV(KNeighborsClassifier(), param_grid, cv=5, scoring='accuracy')
+# If using SVM, replace the line above with:
+# grid_search = GridSearchCV(SVC(), param_grid, cv=5, scoring='accuracy')
 
-print("Grid scores on development set:")
-means = clf.cv_results_['mean_test_score']
-stds = clf.cv_results_['std_test_score']
-for mean, std, params in zip(means, stds, clf.cv_results_['params']):
-    print("{:0.3f} (+/-{:0.03f}) for {}".format(mean, std * 2, params))
+grid_search.fit(X_train, y_train)
 
-print("\nBest parameter on development set: {}".format(clf.best_params_))
+# Print the best parameters and score
+print(f"Best parameters: {grid_search.best_params_}")
+print(f"Best cross-validation score: {grid_search.best_score_:.3f}")
 
-score = cross_val_score(clf, X_train, y_train, cv=3, scoring="accuracy")
-print("Accuracy: {}".format(score))
+# Print grid scores
+print("\nGrid scores on development set:")
+means = grid_search.cv_results_['mean_test_score']
+stds = grid_search.cv_results_['std_test_score']
+for mean, std, params in zip(means, stds, grid_search.cv_results_['params']):
+    print(f"{mean:.3f} (+/-{std * 2:.03f}) for {params}")
+
+# Evaluate on the test set
+test_score = grid_search.score(X_test, y_test)
+print(f"\nTest set accuracy: {test_score:.3f}")
+
+# Visualize the results (for KNN only)
+if 'n_neighbors' in param_grid:
+    n_neighbors = param_grid['n_neighbors']
+    train_scores = grid_search.cv_results_['mean_test_score'].reshape(len(n_neighbors), -1)
+
+    plt.figure(figsize=(10, 6))
+    plt.plot(n_neighbors, train_scores[:, 0], label='uniform weights')
+    plt.plot(n_neighbors, train_scores[:, 1], label='distance weights')
+    plt.xlabel('Number of Neighbors')
+    plt.ylabel('Accuracy')
+    plt.title('KNN Performance by Number of Neighbors and Weight Type')
+    plt.legend()
+    plt.show()
+
+# Display an example digit
+plt.figure(figsize=(5, 5))
+plt.imshow(digits.images[0], cmap=plt.cm.gray_r, interpolation='nearest')
+plt.title("Example: Digit 0")
+plt.axis('off')
+plt.show()
