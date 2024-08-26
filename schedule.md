@@ -7,6 +7,6 @@
 | 40 | 1.5/E | ML performance | Training a classifier <br> Thinking about performance <br> Hyperparameter tuning <br> Visualizing a decision tree <br> Confusion matrix <br> Evaluating a classifier <br> Log loss <br> Learning curves | 2 <br> Data | Preliminary ML report, Ch. 1-3 | 3.3 <br> 3.5 | 864 |
 | 41 | 1.6/F | Unsupervised Machine Learning | Clustering <br> K-means <br> Expectation maximization <br> Dimensionality reduction <br> Principal component analysis | | Feedback on other groups' preliminary report | 8.1 - 8.4 <br> 9 |
 | 42 | 1.7/G | Regression | Linear regression <br> Logistic Regression <br> Lasso Regression <br> Classification and regression | 3 <br> ML performance | | 4 | 786-792 |
-| 43 |       | No class | | | |   |   |
-| 44 | 1.8/H | Wrap-up | | | |   |   |
+| 43 |       | Holiday | | | |   |   |
+| 44 | 1.8/H | No class | | | |   |   |
 | 45 | 1.9/I | No class | | resit 1,2,3 | Full ML report |   |   |
