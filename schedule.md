@@ -12,8 +12,7 @@
 | 45 | 1.9 | No class | | resit 1,2,3 | Full ML report |   |   |
 | 46 | 2.1 | Artifical Neural Network (ANN)| Machine learning vs deep learning <br> Biological neuron <br> Perceptron <br> Multi-layer perceptron (MLP) <br> Backpropagation <br> Regression and classification MLP| | |   |   |
 | 47 | 2.2 | Deep Neural Network (DNN) | Vanishing and exploding gradients <br> Transfer learning <br> Training optimization <br> Learning rate scheduling <br> Regularization <br> Data augmentation | | Resit ML report |   |   |
-| 48 | 2.3 | Convolutional Neural Network (CNN) | Visual cortex <br> CNN vs MLP <br> Recap convolution <br> Convolutional layer <br> 
-Pooling layer <br> CNN architecture | 4 <br> ANN | |   |   |
+| 48 | 2.3 | Convolutional Neural Network (CNN) | Visual cortex <br> CNN vs MLP <br> Recap convolution <br> Convolutional layer <br> Pooling layer <br> CNN architecture | 4 <br> ANN | |   |   |
 | 49 | 2.4 | Advanced CNN | Object detection <br> Object tracking <br> Semantic segmentation <br> Variational autoencoder <br> Edge computing <br> Transfer learning | | |   |   |
 | 50 | 2.5 | Vision Transfomers | tbd | 5 <br> CNN | |   |   |
 | 51 | 2.6 | Mind and machine <br> Cognitive Science introduction | Mental representations <br> Visual perception <br> Cognitive approach <br> Mind as a web <br> Artificial Intelligence | | |   |   |
