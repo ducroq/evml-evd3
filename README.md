@@ -29,7 +29,7 @@ For assessment, you will write a report about your project. In this report, you 
 You are expected to:
 1. explain ML basic principles and reflect on its applications.
 2. apply supervised ML in practice by selecting and training an algorithm, and preparing data.
-3. analyze an supervised ML pipeline by validating and testing; and evaluating quality measures.
+3. analyze a supervised ML pipeline by validating and testing; and evaluating quality measures.
 4. understand DL basic principles and reflect on its application.
 5. apply a CNN in practice by selecting and training a network.
 6. analyze a CNN and evaluates its performance.
