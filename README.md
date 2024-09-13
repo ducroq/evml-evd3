@@ -51,7 +51,7 @@ Kaehler, A. and Bradski, G. (2016). *Learning OpenCV 3*. O'Reilly Media (ISBN: 9
 3. [scripts](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/scripts)
 4. [support material](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/support%20material)
 5. [templates](https://gitlab.com/jeroen_veen/evml-evd3/-/tree/main/templates)
-6. [collection of applications] (https://padlet.com/jeroen_veen/zul8z8tbvhqpvb8t)
+6. [collection of applications](https://padlet.com/jeroen_veen/zul8z8tbvhqpvb8t)
 
 
 ## Assessment
