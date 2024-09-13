@@ -17,7 +17,7 @@ kMappings = {}
 for key in mappings.keys():
     kMappings[ord(key)] = mappings[key]
 
-vs = VideoStream(src=1, usePiCamera=False, resolution=frame_size).start()
+vs = VideoStream(src=0, usePiCamera=False, resolution=frame_size).start()
 time.sleep(1.0)
 
 print(mappings)
