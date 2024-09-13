@@ -17,8 +17,8 @@ def maskBlueBG(img):
     light_blue = (75,125,0)  # converted from HSV value obtained with colorpicker (150,50,0)
     dark_blue  = (140,255,255)  # converted from HSV value obtained with colorpicker (250,100,100)
 
-    light_blue = (0,0,0)  # converted from HSV value obtained with colorpicker (150,50,0)
-    dark_blue  = (255,50,255)  # converted from HSV value obtained with colorpicker (250,100,100)
+    # light_blue = (0,0,0)  # converted from HSV value obtained with colorpicker (150,50,0)
+    # dark_blue  = (255,50,255)  # converted from HSV value obtained with colorpicker (250,100,100)
 
     # Mark pixels outside background color range
     mask = ~cv.inRange(img_hsv, light_blue, dark_blue)
@@ -27,8 +27,7 @@ def maskBlueBG(img):
 
 if __name__ == "__main__":
     """ Test segmentation functions"""
-    data_path = r'G:\My Drive\data\gesture_data\hang_loose'
-    data_path = r'G:\My Drive\data\gesture_data\thijs'
+    data_path = r'C:\Users\scbry\OneDrive - HAN\data\EVML\gesture_data'
 
     # grab the list of images in our data directory
     print("[INFO] loading images...")
