@@ -1,8 +1,11 @@
+import os
 import cv2
 import imutils
 
 # load the image 
 image_file_name = "tetris_blocks.png"
+image_file_name = os.path.join(os.path.dirname(__file__), image_file_name)
+
 image = cv2.imread(image_file_name)
 cv2.imshow("Image", image)
 cv2.waitKey(0)
