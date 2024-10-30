@@ -6,6 +6,10 @@ from sklearn.decomposition import PCA
 
 # Load the Breast Cancer dataset
 breast_cancer = load_breast_cancer()
+print(breast_cancer.DESCR)
+print(breast_cancer.feature_names)
+
+
 X = breast_cancer.data
 y = breast_cancer.target
 
